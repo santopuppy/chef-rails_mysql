@@ -1,6 +1,6 @@
 include_recipe 'apt'
 
-mysql_service 'default' do
+mysql_service 'vagrant' do
   initial_root_password node['rails_mysql']['root_password']
   action [:create, :start]
 end

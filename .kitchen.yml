@@ -13,3 +13,5 @@ suites:
     run_list:
       - recipe[rails_mysql::vagrant]
     attributes:
+      rails_mysql:
+        root_password: 'test_pass'
